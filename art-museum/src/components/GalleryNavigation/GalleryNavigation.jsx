@@ -1,4 +1,5 @@
-import GalleryNavigationItem from "../GalleryNavigationItem/GalleryNavigationItem.jsx"
+import GalleryNavigationItem from "../GalleryNavigationItem/GalleryNavigationItem.jsx";
+import "./GalleryNavigation.css";
 
 function GalleryNavigation(props){
     const galleries = props.galleries;
