@@ -1,9 +1,18 @@
+// import { NavLink } from "react-router-dom";
 
 function GalleryNavigation(props){
     const galleries = props.galleries
-    debugger;    
+
+    const galleriesList = galleries.map((gallerie) => {
+        return (<p>{gallerie.name}</p>)
+    })
+
     return(
-        <h1>Galleries</h1>
+        <nav>
+            <h1>Galleries</h1>
+                {galleriesList}
+            {/* <NavLink to="/" /> */}
+        </nav>
     )
 }
 
